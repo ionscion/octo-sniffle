@@ -18,19 +18,68 @@
         <p class="subtitle">Primary subtitle</p>
       </div>
     </section>
-    <div class="columns">
-      <div class="column">First column
-        <div class="card is-primary">
-            <div class="card-content is-primary">
-              <div class="content">
-                Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
-              </div>
+
+    <!-- <progress class="progress is-small is-primary" max="100">15%</progress> -->
+
+    <div class="columns is-multiline is-centered">
+        <div class="field column is-half is-margin-small">
+            <label class="label">City Search</label>
+            <div class="control">
+              <input class="input" id="city-input" type="text" placeholder="Enter city here">
             </div>
           </div>
+        
+          <div class="field column is-half">
+            <label class="label">State</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" id="state-input" type="text" placeholder="Enter state here">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+          </div>
+        
+        
+          <div class="field is-grouped column is-half">
+            <div class="control">
+              <button class="button is-link" id="search-btn">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-link is-light">Cancel</button>
+            </div>
+          </div>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        Performer 1
+        <div class="card is-primary">
+          <div class="card-content is-primary">
+            <div class="content" id="column-1"></div>
+          </div>
+        </div>
       </div>
-      <div class="column">Second column</div>
-      <div class="column">Third column</div>
-      <div class="column">Fourth column</div>
+      <div class="column">
+        Second column
+        <div class="card is-primary">
+          <div class="card-content is-primary">
+            <div class="content">test data</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        Third column
+        <div class="card is-primary">
+          <div class="card-content is-primary">
+            <div class="content">test data</div>
+          </div>
+        </div>
+      </div>
+     
+      
     </div>
     <script src="./assets/script.js"></script>
   </body>
